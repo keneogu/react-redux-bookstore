@@ -8,7 +8,7 @@ React-Redux Bookstore is a React-Redux project where users can manage and organi
 
 ## Live Demo
 
-[live-link]()
+[live-link](https://kene-bookstore.herokuapp.com/)
 
 
 ## Built With 🛠
