@@ -1,9 +1,10 @@
-import './App.css';
+import '../App.css';
 
 function App() {
   return (
     <div className="App">
-      <h2> Welcome to react bookstore project</h2>
+      <BooksList />
+      <BooksForm />
     </div>
   );
 }
