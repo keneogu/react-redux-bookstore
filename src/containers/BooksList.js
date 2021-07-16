@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { connect } from 'react-redux';
+import Book from '../components/Book';
 
 const BooksList = ({ books }) => (
   <table>
@@ -12,7 +14,7 @@ const BooksList = ({ books }) => (
     </thead>
     <tbody>
       {books.map((book) => (
-        <Book key={book.id} book={book} />
+        <Book key={book.bookId} book={book} />
       ))}
     </tbody>
   </table>
