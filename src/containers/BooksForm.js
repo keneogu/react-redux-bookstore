@@ -10,9 +10,9 @@ const BooksForm = () => {
   const [category, setCategory] = useState('');
 
   const handleChange = (e) => {
-    if (e.target.tagName === 'input') {
+    if (e.target.tagName === 'INPUT') {
       setTitle(e.target.value);
-    } else if (e.target.tagName === 'select') {
+    } else if (e.target.tagName === 'SELECT') {
       setCategory(e.target.value);
     }
   };
