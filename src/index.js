@@ -8,17 +8,17 @@ import rootReducer from './reducers';
 const initialState = {
   books: [
     {
-      bookId: Math.floor(Math.random() * 10),
+      bookId: Math.floor(Math.random() * 1000),
       title: 'Mini habits',
       category: 'History',
     },
     {
-      bookId: Math.floor(Math.random() * 10),
+      bookId: Math.floor(Math.random() * 1000),
       title: 'Deep work',
       category: 'Biography',
     },
     {
-      bookId: Math.floor(Math.random() * 10),
+      bookId: Math.floor(Math.random() * 1000),
       title: 'Eat the frog',
       category: 'Learning',
     },
