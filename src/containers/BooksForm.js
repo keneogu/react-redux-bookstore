@@ -30,7 +30,7 @@ const BooksForm = (props) => {
   };
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <input type="text" placeholder="Book Form" onChange={handleChange} value={title} />
       <select name="categories" id="categories" onChange={handleChange} value={category}>
         {categories.map((category) => (
@@ -39,7 +39,7 @@ const BooksForm = (props) => {
           </option>
         ))}
       </select>
-      <button type="submit" onClick={handleSubmit}>Submit</button>
+      <button type="submit">Submit</button>
     </form>
   );
 };
