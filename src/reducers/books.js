@@ -5,10 +5,7 @@ const booksReducer = (state = {}, action) => {
     case CREATE_BOOK:
       return [...state, { bookId: Math.floor(Math.random() * 1000), ...action.payload }];
     case REMOVE_BOOK:
-      return {
-        ...state,
-        books: state.filter((e) => e.id !== action.payload.bookId),
-      };
+      return state.filter((book) => book.bookId !== action.payload);
     default:
       return state;
   }
