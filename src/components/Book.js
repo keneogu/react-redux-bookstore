@@ -10,7 +10,7 @@ const Book = ({ book: { bookId, title, category } }) => (
 
 Book.propTypes = {
   book: PropTypes.shape({
-    bookId: PropTypes.string.isRequired,
+    bookId: PropTypes.number.isRequired,
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }).isRequired,
