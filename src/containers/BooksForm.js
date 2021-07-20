@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import { v4 as uuid } from 'uuid';
 import { createBook } from '../actions/index';
 
 const BooksForm = (props) => {
@@ -34,7 +35,7 @@ const BooksForm = (props) => {
       <input type="text" placeholder="Book Form" onChange={handleChange} value={title} />
       <select name="categories" id="categories" onChange={handleChange} value={category}>
         {categories.map((category) => (
-          <option key={Math.floor(Math.random() * 10000)} value={category}>
+          <option key={uuid()} value={category}>
             {category}
           </option>
         ))}
