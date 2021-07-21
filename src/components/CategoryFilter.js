@@ -2,7 +2,7 @@ import React from 'react';
 
 function CategoryFilter() {
   const categories = ['All', 'Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
-  
+
   return (
     <div>
       <select>
