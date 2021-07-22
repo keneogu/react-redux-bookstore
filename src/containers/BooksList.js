@@ -7,7 +7,8 @@ import { removeBook, changeFilter } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = (props) => {
-  const { books } = props;
+  const { books, fil } = props;
+
   const handleRemoveBook = (book) => {
     props.dispatch(removeBook(book));
   };
@@ -30,7 +31,7 @@ const BooksList = (props) => {
           </tr>
         </thead>
         <tbody>
-          {books.map((book) => (
+          {books.filter((book) => book.category === fil || fil === 'All' || fil === '').map((book) => (
             <Book key={book.bookId} book={book} handleRemoveBook={handleRemoveBook} />
           ))}
         </tbody>
@@ -42,10 +43,12 @@ const BooksList = (props) => {
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object).isRequired,
   dispatch: PropTypes.func.isRequired,
+  fil: PropTypes.string.isRequired,
 };
 
 const mapStateToProps = (state) => ({
   books: state.books,
+  fil: state.filter,
 });
 
 export default connect(mapStateToProps)(BooksList);
