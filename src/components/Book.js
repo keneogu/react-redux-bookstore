@@ -13,7 +13,7 @@ const Book = ({ book: { bookId, title, category }, handleRemoveBook }) => (
 
 Book.propTypes = {
   book: PropTypes.shape({
-    bookId: PropTypes.number.isRequired,
+    bookId: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }).isRequired,
