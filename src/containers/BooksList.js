@@ -7,14 +7,16 @@ import { removeBook, changeFilter } from '../actions';
 import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = (props) => {
-  const { books, fil } = props;
+  const {
+    books, fil, removeBook, changeFilter,
+  } = props;
 
   const handleRemoveBook = (book) => {
-    props.dispatch(removeBook(book));
+    removeBook(book);
   };
 
   const handleFilterChange = (e) => {
-    props.dispatch(changeFilter(e.target.value));
+    changeFilter(e.target.value);
   };
 
   return (
@@ -42,7 +44,8 @@ const BooksList = (props) => {
 
 BooksList.propTypes = {
   books: PropTypes.arrayOf(PropTypes.object).isRequired,
-  dispatch: PropTypes.func.isRequired,
+  removeBook: PropTypes.func.isRequired,
+  changeFilter: PropTypes.func.isRequired,
   fil: PropTypes.string.isRequired,
 };
 
@@ -51,4 +54,13 @@ const mapStateToProps = (state) => ({
   fil: state.filter,
 });
 
-export default connect(mapStateToProps)(BooksList);
+const mapDispatchToProps = (dispatch) => ({
+  removeBook: (book) => {
+    dispatch(removeBook(book));
+  },
+  changeFilter: (filter) => {
+    dispatch(changeFilter(filter));
+  },
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(BooksList);
