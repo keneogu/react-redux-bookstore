@@ -28,3 +28,19 @@
 	font-size: 1em;
   color: #157aa8;
 }
+
+.book_action {
+	font-size: 1em;
+  color: var(--blue-2);
+  cursor: pointer;
+  padding: 0 0.7em;
+  border-right: lightgray 2px solid;
+}
+
+.normalize {
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 1em;
+	font-family: inherit;
+}
