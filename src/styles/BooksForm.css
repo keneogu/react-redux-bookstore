@@ -34,3 +34,14 @@ form select {
   border: none;
   background-color: #fff;
 }
+
+form button {
+  width: 18%;
+  padding: 1em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0290ff;
+  font-family: 'Roboto Slab', serif;
+  border: none;
+  border-radius: 0.2em;
+}
