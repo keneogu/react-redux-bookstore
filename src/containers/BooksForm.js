@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { v4 as uuid } from 'uuid';
 import { createBook } from '../actions/index';
+import '../styles/BooksForm.css';
 
 const BooksForm = (props) => {
   const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -31,17 +32,20 @@ const BooksForm = (props) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Book Form" onChange={handleChange} value={title} />
-      <select name="categories" id="categories" onChange={handleChange} value={category}>
-        {categories.map((category) => (
-          <option key={uuid()} value={category}>
-            {category}
-          </option>
-        ))}
-      </select>
-      <button type="submit">Submit</button>
-    </form>
+    <div className="form-container">
+      <h2>ADD BOOK</h2>
+      <form onSubmit={handleSubmit}>
+        <input type="text" placeholder="Book Form" onChange={handleChange} value={title} />
+        <select name="categories" id="categories" onChange={handleChange} value={category}>
+          {categories.map((category) => (
+            <option key={uuid()} value={category}>
+              {category}
+            </option>
+          ))}
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   );
 };
 
