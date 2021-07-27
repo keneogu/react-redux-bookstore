@@ -1,0 +1,15 @@
+.form-container {
+  width: 1200px;
+	margin: 20px auto;
+	border-top: 3px solid #727272;
+	margin-left: 6.25rem;
+	margin-bottom: 5rem;
+}
+
+.form-container h2 {
+  color: #888;
+  font-size: 1.25rem;
+  font-weight: 700;
+	text-transform: uppercase;
+	padding: 25px 0;
+}
