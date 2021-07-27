@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import CategoryFilter from './CategoryFilter';
 import '../styles/Header.css';
 
@@ -11,7 +13,7 @@ function Header() {
         <span className="head-span"><CategoryFilter /></span>
       </div>
       <div className="head-icon">
-        
+        <FontAwesomeIcon icon={faUser} className="icon" size="17x" />
       </div>
     </div>
   );
