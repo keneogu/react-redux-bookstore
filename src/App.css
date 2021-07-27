@@ -10,3 +10,12 @@ body {
   font-family: Montserrat, sans-serif;
   background-color: rgba(0, 0, 0, 0.05);
 }
+
+:root {
+  --black-one: #121212;
+  --black-two: #757575;
+  --azure: #0290ff;
+  --blue-2: #4386bf;
+  --font: montserrat;
+  --font-2: 'Roboto Slab', serif;
+}
