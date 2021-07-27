@@ -38,3 +38,7 @@
 	opacity: 0.5;
 	padding-left: 25px;
 }
+
+.icon {
+	color: var(--azure);
+}
