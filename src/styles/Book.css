@@ -97,3 +97,27 @@
 	padding: 0 6em 0.6em 0.7em;
 	border-right: 2px solid #757575;
 }
+
+.chapter {
+	padding: 0 5em 0.6em 0.7em;
+	margin-left: 30px;
+}
+
+.chapter_text {
+	font-size: 0.8em;
+  margin: 0 0 0.5em;
+}
+
+.chapter_number {
+	margin: 0 0 1.5em;
+}
+
+.chapter_button {
+	background-color: #0290ff;
+    padding: 0.5em 1.8em;
+    border: solid #0081e4;
+    border-radius: 4px;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+}
