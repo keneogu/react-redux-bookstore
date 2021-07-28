@@ -8,10 +8,10 @@ const Book = ({ book: { bookId, title, category }, handleRemoveBook }) => (
       <div className="book_category">{category}</div>
       <div className="book_title">{title}</div>
       <div className="book_author">Author</div>
-      <div>
+      <div className="book_action-container">
         <span className="book_action">Comments</span>
-        <span className="book_action"><button className="normalize" type="button" onClick={() => handleRemoveBook(bookId)}>Remove</button></span>
-        <span className="book_action">Edit</span>
+        <span className="book_action bk"><button className="normalize" type="button" onClick={() => handleRemoveBook(bookId)}>Remove</button></span>
+        <span className="book_action bk">Edit</span>
       </div>
     </div>
     <div className="book-right">
