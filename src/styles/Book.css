@@ -13,34 +13,44 @@
 }
 
 .book_category {
-	font-family: Montserrat, sans-serif;
+	font-family: var(--font);
   font-size: 0.7em;
-  color: #757575;
+  color: var(--black-two);
 }
 
 .book_title {
-	font-family: Montserrat, sans-serif;
-  font-size: 1.1em;
-  color: #121212;
+	font-family: var(--font-2);
+  font-size: 1.8em;
+  font-weight: bold;
+  color: var(--black-one);
 }
 
 .book_author {
-	font-size: 1em;
-  color: #157aa8;
+	font-size: 0.85rem;
+  color: var(--blue-2);
 }
 
 .book_action {
-	font-size: 1em;
+	font-size: 0.85rem;
   color: var(--blue-2);
   cursor: pointer;
-  padding: 0 0.7em;
+  padding-right: 0.7em;
   border-right: lightgray 2px solid;
+}
+
+.bk {
+  padding-left: 0.7em;
+}
+
+.book_action-container {
+  margin-top: 1.23rem;
 }
 
 .normalize {
 	background: none;
 	border: none;
-	cursor: pointer;
+  cursor: pointer;
+  color: var(--blue-2);
 	font-size: 1em;
 	font-family: inherit;
 }
@@ -95,7 +105,15 @@
 
 .completion {
 	padding: 0 6em 0.6em 0.7em;
-	border-right: 2px solid #757575;
+	border-right: 2px solid #e8e8e8;
+}
+
+.completion_text {
+  color: var(--black-two);
+}
+
+.completion_number {
+  font-size: 1.8em;
 }
 
 .chapter {
@@ -104,6 +122,7 @@
 }
 
 .chapter_text {
+  color: var(--black-two);
 	font-size: 0.8em;
   margin: 0 0 0.5em;
 }
@@ -113,11 +132,11 @@
 }
 
 .chapter_button {
-	background-color: #0290ff;
+	background-color: var(--azure);
     padding: 0.5em 1.8em;
-    border: solid #0081e4;
+    border: solid var(--azure);
     border-radius: 4px;
-    font-family: inherit;
+    font-family: var(--font-2);
     color: white;
     cursor: pointer;
 }
