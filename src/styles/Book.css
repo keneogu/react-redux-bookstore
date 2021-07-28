@@ -1,37 +1,37 @@
 .book {
-	width: 1200px;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	padding: 30px;
-	background-color: white;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  background-color: white;
   border: lightgray 1px solid;
-	border-radius: 5px;
-	margin-left: 6.25rem;
+  border-radius: 5px;
+  margin-left: 6.25rem;
   margin-bottom: 1em;
 }
 
 .book_category {
-	font-family: var(--font);
+  font-family: var(--font);
   font-size: 0.7em;
   color: var(--black-two);
 }
 
 .book_title {
-	font-family: var(--font-2);
+  font-family: var(--font-2);
   font-size: 1.8em;
   font-weight: bold;
   color: var(--black-one);
 }
 
 .book_author {
-	font-size: 0.85rem;
+  font-size: 0.85rem;
   color: var(--blue-2);
 }
 
 .book_action {
-	font-size: 0.85rem;
+  font-size: 0.85rem;
   color: var(--blue-2);
   cursor: pointer;
   padding-right: 0.7em;
@@ -47,17 +47,17 @@
 }
 
 .normalize {
-	background: none;
-	border: none;
+  background: none;
+  border: none;
   cursor: pointer;
   color: var(--blue-2);
-	font-size: 1em;
-	font-family: inherit;
+  font-size: 1em;
+  font-family: inherit;
 }
 
 .book-right {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -104,8 +104,8 @@
 }
 
 .completion {
-	padding: 0 6em 0.6em 0.7em;
-	border-right: 2px solid #e8e8e8;
+  padding: 0 6em 0.6em 0.7em;
+  border-right: 2px solid #e8e8e8;
 }
 
 .completion_text {
@@ -117,26 +117,26 @@
 }
 
 .chapter {
-	padding: 0 5em 0.6em 0.7em;
-	margin-left: 30px;
+  padding: 0 5em 0.6em 0.7em;
+  margin-left: 30px;
 }
 
 .chapter_text {
   color: var(--black-two);
-	font-size: 0.8em;
+  font-size: 0.8em;
   margin: 0 0 0.5em;
 }
 
 .chapter_number {
-	margin: 0 0 1.5em;
+  margin: 0 0 1.5em;
 }
 
 .chapter_button {
-	background-color: var(--azure);
-    padding: 0.5em 1.8em;
-    border: solid var(--azure);
-    border-radius: 4px;
-    font-family: var(--font-2);
-    color: white;
-    cursor: pointer;
+  background-color: var(--azure);
+  padding: 0.5em 1.8em;
+  border: solid var(--azure);
+  border-radius: 4px;
+  font-family: var(--font-2);
+  color: white;
+  cursor: pointer;
 }

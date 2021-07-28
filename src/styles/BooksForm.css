@@ -1,17 +1,17 @@
 .form-container {
   width: 1200px;
-	margin: 20px auto;
-	border-top: 2px solid #e8e8e8;
-	margin-left: 6.25rem;
-	margin-bottom: 5rem;
+  margin: 20px auto;
+  border-top: 2px solid #e8e8e8;
+  margin-left: 6.25rem;
+  margin-bottom: 5rem;
 }
 
 .form-container h2 {
   color: #888;
   font-size: 1.25rem;
   font-weight: 700;
-	text-transform: uppercase;
-	padding: 25px 0;
+  text-transform: uppercase;
+  padding: 25px 0;
 }
 
 form {
