@@ -1,10 +1,12 @@
 # React-Redux Bookstore
 
-![Microverse](https://img.shields.io/badge/-Microverse-6F23FF?style=for-the-badge)
-
 ## Description
 
 React-Redux Bookstore is a React-Redux project where users can manage and organize their books.
+
+## Screen Shot
+
+![screenshot](src/bookstore.png)
 
 ## Live Demo
 

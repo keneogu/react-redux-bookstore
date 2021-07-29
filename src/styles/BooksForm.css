@@ -1,0 +1,47 @@
+.form-container {
+  width: 1200px;
+  margin: 20px auto;
+  border-top: 2px solid #e8e8e8;
+  margin-left: 6.25rem;
+  margin-bottom: 5rem;
+}
+
+.form-container h2 {
+  color: #888;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 25px 0;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form input {
+  width: 60%;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  padding: 1em;
+}
+
+form select {
+  width: 18%;
+  padding: 1em;
+  border: none;
+  background-color: #fff;
+}
+
+form button {
+  width: 18%;
+  padding: 1em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #0290ff;
+  font-family: 'Roboto Slab', serif;
+  border: none;
+  border-radius: 0.2em;
+}

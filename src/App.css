@@ -1,14 +1,22 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+:root {
+  --black-one: #121212;
+  --black-two: #757575;
+  --azure: #0290ff;
+  --blue-2: #4386bf;
+  --font: montserrat;
+  --font-2: 'Roboto Slab', serif;
 }
